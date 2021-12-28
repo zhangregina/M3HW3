@@ -4,7 +4,7 @@ from . import parser, models
 
 class ParserForm(forms.Form):
     MEDIA_CHOICES = (
-        ('Series', 'series'),
+        ('series', 'series'),
     )
     media_type = forms.ChoiceField(choices=MEDIA_CHOICES)
 

@@ -4,7 +4,6 @@ from . import models, forms, parser
 from django.http import HttpResponseRedirect
 
 
-
 class FilmView(ListView):
     model = models.Series
     template_name = 'film_index.html'

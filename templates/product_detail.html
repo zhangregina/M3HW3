@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Detail</title>
+</head>
+<body>
+<div>
+  <h2>{{ product_in.name }}</h2>
+  <p>{{ product_in.description}}</p>
+  <p>{{ product_in.price }}</p>
+  <p>{{ product_in.date_created }}</p>
+  <p>Tags:
+        {% for i in object.tags.all %}
+            {{ i }}{% if i != object.tags.all.last %} , {% endif %}
+        {% endfor %}
+    </p>
+
+</div>
+</body>
+</html>
